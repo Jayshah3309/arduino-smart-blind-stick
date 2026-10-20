@@ -4,7 +4,7 @@
 
 New reference implementation. Hardware tests, mounting evaluation, power measurements, real prototype photos and demo video have not been supplied. No claim of assistive reliability, user testing, SIH achievement or deployment is made.
 
-Control tests exercise distance conversion, threshold boundaries, invalid readings, stale data, clock rollover, alert priority and pulse timing. GitHub Actions compiles the sketch for UNO using AVR core 1.8.6 and runs the tests. Record the verified run URL here after execution. A successful build is not hardware validation.
+Control tests exercise distance conversion, threshold boundaries, invalid readings, stale data, clock rollover, alert priority and pulse timing. GitHub Actions compiles the sketch for UNO using AVR core 1.8.6 and runs the tests. Both jobs passed in [verified run #1](https://github.com/Jayshah3309/arduino-smart-blind-stick/actions/runs/39399004772), commit `4d6050d`, on 20 October 2026. The runner emitted an Arduino setup-action runtime deprecation warning; it did not fail the build. A successful build is not hardware validation.
 
 ## Bench acceptance tests
 
