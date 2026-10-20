@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960"><rect width="1200" height="960" fill="#f8fafc"/>
+<text x="30" y="40" font-family="Arial,sans-serif" font-size="26" fill="#16324f">SMART BLIND STICK · PROPOSED REFERENCE CONNECTIONS</text>
+<text x="30" y="72" font-family="Arial,sans-serif" font-size="17" fill="#16324f">UNO R3 · three HC-SR04 sensors · local alerts only · hardware verification pending</text>
+<rect x="30" y="110" width="300" height="335" rx="8" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="55" y="147" font-family="Arial,sans-serif" font-size="23" fill="#16324f">ARDUINO UNO R3</text>
+<text x="55" y="190" font-family="Arial,sans-serif" font-size="17" fill="#16324f">USB power → UNO</text>
+<text x="55" y="228" font-family="Arial,sans-serif" font-size="17" fill="#16324f">5V → sensor VCC (all three)</text>
+<text x="55" y="266" font-family="Arial,sans-serif" font-size="17" fill="#16324f">GND → all common grounds</text>
+<text x="55" y="304" font-family="Arial,sans-serif" font-size="17" fill="#16324f">D8 → passive piezo → GND</text>
+<text x="55" y="342" font-family="Arial,sans-serif" font-size="17" fill="#16324f">D10 → help button → GND</text>
+<text x="55" y="380" font-family="Arial,sans-serif" font-size="17" fill="#16324f">D9 → motor gate resistor</text>
+<rect x="365" y="110" width="250" height="210" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="385" y="148" font-family="Arial,sans-serif" font-size="21" fill="#16324f">FRONT HC-SR04</text>
+<text x="385" y="186" font-family="Arial,sans-serif" font-size="17" fill="#16324f">TRIG / ECHO: D2 / D3</text>
+<text x="385" y="221" font-family="Arial,sans-serif" font-size="17" fill="#16324f">VCC → UNO 5V</text>
+<text x="385" y="256" font-family="Arial,sans-serif" font-size="17" fill="#16324f">GND → common GND</text>
+<rect x="640" y="110" width="250" height="210" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="660" y="148" font-family="Arial,sans-serif" font-size="21" fill="#16324f">LEFT HC-SR04</text>
+<text x="660" y="186" font-family="Arial,sans-serif" font-size="17" fill="#16324f">TRIG / ECHO: D4 / D5</text>
+<text x="660" y="221" font-family="Arial,sans-serif" font-size="17" fill="#16324f">VCC → UNO 5V</text>
+<text x="660" y="256" font-family="Arial,sans-serif" font-size="17" fill="#16324f">GND → common GND</text>
+<rect x="915" y="110" width="250" height="210" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="935" y="148" font-family="Arial,sans-serif" font-size="21" fill="#16324f">RIGHT HC-SR04</text>
+<text x="935" y="186" font-family="Arial,sans-serif" font-size="17" fill="#16324f">TRIG / ECHO: D6 / D7</text>
+<text x="935" y="221" font-family="Arial,sans-serif" font-size="17" fill="#16324f">VCC → UNO 5V</text>
+<text x="935" y="256" font-family="Arial,sans-serif" font-size="17" fill="#16324f">GND → common GND</text>
+<rect x="365" y="345" width="800" height="100" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="385" y="378" font-family="Arial,sans-serif" font-size="18" fill="#16324f">Read sensors sequentially: 70 ms between pings. Echo timeout: 25 ms.</text>
+<text x="385" y="414" font-family="Arial,sans-serif" font-size="18" fill="#16324f">Missing echo = UNKNOWN, not clear path. No GPS or remote SOS.</text>
+<text x="30" y="490" font-family="Arial,sans-serif" font-size="23" fill="#16324f">MOTOR DRIVER · separate regulated 5 V motor supply</text>
+<polyline points="70,545 1130,545" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="70" y="530" font-family="Arial,sans-serif" font-size="17" fill="#16324f">MOTOR +5 V</text>
+<polyline points="70,865 1130,865" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="70" y="894" font-family="Arial,sans-serif" font-size="17" fill="#16324f">COMMON GND → UNO GND and motor supply negative</text>
+<rect x="790" y="590" width="130" height="85" rx="8" fill="#fef3c7" stroke="#94a3b8"/>
+<text x="814" y="625" font-family="Arial,sans-serif" font-size="17" fill="#16324f">5 V motor</text>
+<text x="811" y="650" font-family="Arial,sans-serif" font-size="15" fill="#16324f">&lt;=300 mA</text>
+<polyline points="855,545 855,590" fill="none" stroke="#dc2626" stroke-width="2"/>
+<polyline points="855,675 855,710 635,710" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="480" y="705" width="155" height="105" rx="8" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="500" y="742" font-family="Arial,sans-serif" font-size="17" fill="#16324f">IRLZ44N</text>
+<text x="500" y="774" font-family="Arial,sans-serif" font-size="17" fill="#16324f">G     D     S</text>
+<text x="647" y="740" font-family="Arial,sans-serif" font-size="16" fill="#16324f">Drain → motor −</text>
+<polyline points="600,810 600,865" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="618" y="842" font-family="Arial,sans-serif" font-size="16" fill="#16324f">Source → GND</text>
+<polyline points="70,735 200,735" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="200" y="714" width="100" height="42" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="214" y="742" font-family="Arial,sans-serif" font-size="17" fill="#16324f">220 Ω</text>
+<polyline points="300,735 480,735" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="70" y="704" font-family="Arial,sans-serif" font-size="17" fill="#16324f">UNO D9</text>
+<polyline points="400,735 400,780" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="365" y="780" width="70" height="40" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="374" y="806" font-family="Arial,sans-serif" font-size="15" fill="#16324f">10 kΩ</text>
+<polyline points="400,820 400,865" fill="none" stroke="#334155" stroke-width="2"/>
+<text x="320" y="925" font-family="Arial,sans-serif" font-size="15" fill="#16324f">Use manufacturer pinout; block terminals are labels, not physical lead positions.</text>
+<rect x="985" y="585" width="160" height="110" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="1005" y="615" font-family="Arial,sans-serif" font-size="17" fill="#16324f">1N5819 diode</text>
+<text x="1000" y="645" font-family="Arial,sans-serif" font-size="15" fill="#16324f">Cathode → +5 V</text>
+<text x="1000" y="675" font-family="Arial,sans-serif" font-size="15" fill="#16324f">Anode → drain</text>
+<polyline points="1060,545 1060,585" fill="none" stroke="#dc2626" stroke-width="2"/>
+<polyline points="1060,695 1060,710 855,710" fill="none" stroke="#334155" stroke-width="2"/>
+<rect x="80" y="580" width="290" height="75" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="95" y="609" font-family="Arial,sans-serif" font-size="16" fill="#16324f">100 µF + 100 nF across supply</text>
+<text x="95" y="637" font-family="Arial,sans-serif" font-size="15" fill="#16324f">Electrolytic + to +5 V, − to GND</text>
+<text x="35" y="948" font-family="Arial,sans-serif" font-size="16" fill="#16324f">Do not connect motor supply +5 V to UNO 5V while USB is attached. See wiring.md for exact nets.</text>
+</svg>
