@@ -1,0 +1,13 @@
+build/
+*.elf
+*.hex
+*.o
+*.a
+*.bin
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+.env
